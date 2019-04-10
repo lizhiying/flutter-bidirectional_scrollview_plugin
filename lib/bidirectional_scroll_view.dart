@@ -85,6 +85,13 @@ class _BidirectionalScrollViewState extends State<BidirectionalScrollViewPlugin>
   }
 
   @override
+  void didUpdateWidget(BidirectionalScrollViewPlugin oldWidget) {
+    // TODO: implement didUpdateWidget
+    super.didUpdateWidget(oldWidget);
+    _child = widget.child;
+  }
+  
+  @override
   void initState() {
     super.initState();
     _controller = new AnimationController(vsync: this)
