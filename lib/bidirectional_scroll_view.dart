@@ -241,7 +241,7 @@ class _BidirectionalScrollViewState extends State<BidirectionalScrollViewPlugin>
       child: new Container(
           key: _containerKey,
           child: new Stack(
-            overflow: Overflow.visible,
+            overflow: Overflow.clip,
             children: <Widget>[
               new Positioned(
                   key: _positionedKey,
